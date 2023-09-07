@@ -1,0 +1,52 @@
+{
+  "name": "@cullyfung/compare-code",
+  "version": "0.0.1",
+  "description": "A simple library for generating incremental code",
+  "keywords": [
+    "git",
+    "compare-code"
+  ],
+  "homepage": "https://github.com/cullyfung/compare-code#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cullyfung/compare-code.git"
+  },
+  "license": "MIT",
+  "author": "Cully Fung <cullyfung@gmail.com>",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./cli": "./bin/compare-code.js"
+  },
+  "main": "dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "compare-code": "bin/compare-code.js"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "esno ./src/index.ts",
+    "release": "changelogen --release && npm publish && git push --follow-tags"
+  },
+  "devDependencies": {
+    "@types/diff": "^5.0.3",
+    "@types/fs-extra": "^11.0.1",
+    "cac": "^6.7.14",
+    "changelogen": "^0.5.5",
+    "diff": "^5.1.0",
+    "esno": "^0.17.0",
+    "fs-extra": "^11.1.1",
+    "simple-git": "^3.19.1",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  },
+  "packageManager": "pnpm@8.7.4",
+  "publishConfig": {
+    "access": "public"
+  }
+}
