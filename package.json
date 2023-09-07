@@ -15,13 +15,13 @@
   "author": "Cully Fung <cullyfung@gmail.com>",
   "type": "module",
   "exports": {
-    ".": "./dist/index.js",
+    ".": "./dist/index.cjs",
     "./cli": "./bin/compare-code.mjs"
   },
   "main": "dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
-    "compare-code": "bin/compare-code.cjs"
+    "compare-code": "bin/compare-code.mjs"
   },
   "files": [
     "dist",
