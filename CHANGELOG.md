@@ -1,6 +1,20 @@
 # Changelog
 
 
+## v0.0.6
+
+[compare changes](https://github.com/cullyfung/compare-code/compare/v0.0.4...v0.0.6)
+
+### 🏡 Chore
+
+- Update ([c75e680](https://github.com/cullyfung/compare-code/commit/c75e680))
+- **release:** V0.0.4 ([6748041](https://github.com/cullyfung/compare-code/commit/6748041))
+- Update ([bc416d3](https://github.com/cullyfung/compare-code/commit/bc416d3))
+
+### ❤️ Contributors
+
+- Cullyfung <cullyfung@gamil.com>
+
 ## v0.0.4
 
 [compare changes](https://github.com/cullyfung/compare-code/compare/v0.0.4...v0.0.4)
