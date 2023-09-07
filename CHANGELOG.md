@@ -3,6 +3,18 @@
 
 ## v0.0.4
 
+[compare changes](https://github.com/cullyfung/compare-code/compare/v0.0.4...v0.0.4)
+
+### 🏡 Chore
+
+- Update ([c75e680](https://github.com/cullyfung/compare-code/commit/c75e680))
+
+### ❤️ Contributors
+
+- Cullyfung <cullyfung@gamil.com>
+
+## v0.0.4
+
 [compare changes](https://github.com/cullyfung/compare-code/compare/v0.0.3...v0.0.4)
 
 ### 🏡 Chore
