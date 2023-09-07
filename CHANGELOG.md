@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.10
+
+[compare changes](https://github.com/cullyfung/compare-code/compare/v0.0.9...v0.0.10)
+
+### 🏡 Chore
+
+- Update ([94deb60](https://github.com/cullyfung/compare-code/commit/94deb60))
+
+### ❤️ Contributors
+
+- Cullyfung <cullyfung@gamil.com>
+
 ## v0.0.9
 
 [compare changes](https://github.com/cullyfung/compare-code/compare/v0.0.8...v0.0.9)
