@@ -1,6 +1,6 @@
 {
   "name": "@cullyfung/compare-code",
-  "version": "0.0.4",
+  "version": "0.0.3",
   "description": "A simple library for generating incremental code",
   "keywords": [
     "git",
@@ -16,12 +16,12 @@
   "type": "module",
   "exports": {
     ".": "./dist/index.js",
-    "./cli": "./bin/compare-code.js"
+    "./cli": "./bin/compare-code.mjs"
   },
   "main": "dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
-    "compare-code": "bin/compare-code.mjs"
+    "compare-code": "bin/compare-code.cjs"
   },
   "files": [
     "dist",
