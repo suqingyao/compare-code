@@ -1,6 +1,6 @@
 {
   "name": "@cullyfung/compare-code",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A simple library for generating incremental code",
   "keywords": [
     "git",
