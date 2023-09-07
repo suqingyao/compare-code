@@ -21,7 +21,7 @@
   "main": "dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
-    "compare-code": "bin/compare-code.js"
+    "compare-code": "bin/compare-code.mjs"
   },
   "files": [
     "dist",
