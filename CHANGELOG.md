@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.12
+
+[compare changes](https://github.com/cullyfung/compare-code/compare/v0.0.11...v0.0.12)
+
+### 🏡 Chore
+
+- Simplify command ([22665ce](https://github.com/cullyfung/compare-code/commit/22665ce))
+
+### ❤️ Contributors
+
+- Cullyfung <cullyfung@gamil.com>
+
 ## v0.0.11
 
 [compare changes](https://github.com/cullyfung/compare-code/compare/v0.0.10...v0.0.11)
