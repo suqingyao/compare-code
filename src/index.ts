@@ -30,8 +30,12 @@ export async function compareBranchDiff({
       if (!patch) continue;
 
       const filePath = patch.newFileName;
-      const outputFile =
-        outputDir + filePath!.substring(filePath!.indexOf('/'));
+
+      if (!filePath) {
+        continue;
+      }
+
+      const outputFile = outputDir + filePath?.replace(/^[^/]+\//, '/');
       await fsExtra.ensureDir(
         outputFile.substring(0, outputFile.lastIndexOf('/'))
       );
