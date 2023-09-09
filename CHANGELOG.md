@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.14
+
+[compare changes](https://github.com/cullyfung/compare-code/compare/v0.0.13...v0.0.14)
+
+### 🏡 Chore
+
+- Add pathe ([f8923fd](https://github.com/cullyfung/compare-code/commit/f8923fd))
+
+### ❤️ Contributors
+
+- Cullyfung <cullyfung@gamil.com>
+
 ## v0.0.13
 
 [compare changes](https://github.com/cullyfung/compare-code/compare/v0.0.12...v0.0.13)
