@@ -65,7 +65,7 @@ export async function compareBranchDiff({
 const cli = cac('compare-code').version('1.0.0').help();
 
 cli
-  .command('diff [baseBranch] [compareBranch] [repoPath] [outputDir]')
+  .command('[baseBranch] [compareBranch] [repoPath]')
   .action(async (baseBranch, compareBranch, repoPath) => {
     await compareBranchDiff({
       baseBranch,
