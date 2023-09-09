@@ -53,9 +53,14 @@ export async function compareBranchDiff({
       });
 
       const modifiedContent = modifiedLines.join('\n');
-      await fsExtra.writeFile(outputFile, modifiedContent, {
-        encoding: 'utf-8'
-      });
+
+      await fsExtra.writeFile(
+        process.cwd() + '/' + outputFile,
+        modifiedContent,
+        {
+          encoding: 'utf-8'
+        }
+      );
     }
   } catch (error) {
     console.error('Error:', error);
