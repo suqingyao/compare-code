@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.13
+
+[compare changes](https://github.com/cullyfung/compare-code/compare/v0.0.12...v0.0.13)
+
+### 🩹 Fixes
+
+- Path error ([4a7de1f](https://github.com/cullyfung/compare-code/commit/4a7de1f))
+
+### ❤️ Contributors
+
+- Cullyfung <cullyfung@gamil.com>
+
 ## v0.0.12
 
 [compare changes](https://github.com/cullyfung/compare-code/compare/v0.0.11...v0.0.12)
