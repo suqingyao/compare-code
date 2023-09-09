@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.11
+
+[compare changes](https://github.com/cullyfung/compare-code/compare/v0.0.10...v0.0.11)
+
+### 🩹 Fixes
+
+- Filepath undefined error ([6670dd0](https://github.com/cullyfung/compare-code/commit/6670dd0))
+
+### ❤️ Contributors
+
+- Cullyfung <cullyfung@gamil.com>
+
 ## v0.0.10
 
 [compare changes](https://github.com/cullyfung/compare-code/compare/v0.0.9...v0.0.10)
