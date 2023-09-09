@@ -2,6 +2,7 @@ import simpleGit from 'simple-git';
 import fsExtra from 'fs-extra';
 import cac from 'cac';
 import { parsePatch } from 'diff';
+import path from 'pathe';
 
 interface CompareBranchDiffProps {
   baseBranch: string;
@@ -55,13 +56,16 @@ export async function compareBranchDiff({
       const modifiedContent = modifiedLines.join('\n');
 
       await fsExtra.writeFile(
-        process.cwd() + '/' + outputFile,
+        path.join(process.cwd(), outputFile),
         modifiedContent,
         {
           encoding: 'utf-8'
         }
       );
     }
+
+    console.log('open =>', path.join(process.cwd(), outputDir));
+    console.log('success!');
   } catch (error) {
     console.error('Error:', error);
   }
