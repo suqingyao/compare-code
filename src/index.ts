@@ -3,12 +3,19 @@ import fsExtra from 'fs-extra';
 import cac from 'cac';
 import { parsePatch } from 'diff';
 import path from 'pathe';
+import chalk from 'chalk';
+import ora from 'ora';
 
 interface CompareBranchDiffProps {
   baseBranch: string;
   compareBranch: string;
   repoPath: string;
 }
+
+const spinner = ora({
+  text: `⌛ ${chalk.yellow('Generating...')}`,
+  color: 'blue'
+});
 
 export async function compareBranchDiff({
   baseBranch,
@@ -26,6 +33,7 @@ export async function compareBranchDiff({
     if (fsExtra.pathExistsSync(outputDir)) {
       fsExtra.removeSync(outputDir);
     }
+    spinner.start();
 
     for (const patch of patches) {
       if (!patch) continue;
@@ -37,9 +45,7 @@ export async function compareBranchDiff({
       }
 
       const outputFile = outputDir + filePath?.replace(/^[^/]+\//, '/');
-      await fsExtra.ensureDir(
-        outputFile.substring(0, outputFile.lastIndexOf('/'))
-      );
+      await fsExtra.ensureDir(outputFile.substring(0, outputFile.lastIndexOf('/')));
 
       const hunks = patch.hunks;
       const modifiedLines: string[] = [];
@@ -55,17 +61,16 @@ export async function compareBranchDiff({
 
       const modifiedContent = modifiedLines.join('\n');
 
-      await fsExtra.writeFile(
-        path.join(process.cwd(), outputFile),
-        modifiedContent,
-        {
-          encoding: 'utf-8'
-        }
-      );
+      await fsExtra.writeFile(path.join(process.cwd(), outputFile), modifiedContent, {
+        encoding: 'utf-8'
+      });
     }
-
-    console.log('open =>', path.join(process.cwd(), outputDir));
-    console.log('success!');
+    spinner.stopAndPersist({
+      symbol: `✅`,
+      text: `${chalk.green(`Successfully`)} ${chalk.white(
+        `Please open ${path.join(process.cwd(), outputDir)} confirm!`
+      )}`
+    });
   } catch (error) {
     console.error('Error:', error);
   }
