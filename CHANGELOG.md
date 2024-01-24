@@ -1,6 +1,20 @@
 # Changelog
 
 
+## v0.0.18
+
+[compare changes](https://github.com/cullyfung/compare-code/compare/v0.0.17...v0.0.18)
+
+### 🏡 Chore
+
+- Update ([14f3a53](https://github.com/cullyfung/compare-code/commit/14f3a53))
+- Update readme ([b6128f9](https://github.com/cullyfung/compare-code/commit/b6128f9))
+- Improve interactive experience ([5b4c499](https://github.com/cullyfung/compare-code/commit/5b4c499))
+
+### ❤️ Contributors
+
+- Cullyfung <cullyfung@gmail.com>
+
 ## v0.0.17
 
 [compare changes](https://github.com/cullyfung/compare-code/compare/v0.0.16...v0.0.17)
